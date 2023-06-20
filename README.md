@@ -123,7 +123,7 @@
   # METHOD DELETE
      One
 
-	      https://projectam0-app.web.app/educat/delete/id
+	 https://projectam0-app.web.app/educat/delete/id
          https://projectam0-app.web.app/expjob/delete/id
          https://projectam0-app.web.app/sh&ss/delete/id
          https://projectam0-app.web.app/proje/delete/id 
