@@ -1,4 +1,4 @@
-FROM amazoncorretto: 11-alpine3.17-jdk
+FROM amazoncorretto:11-alpine3.17-jdk
 MAINTAINER Am0
 COPY target/amo-0.0.1-SNAPSHOT.jar am0-app.jar
 ENTRYPOINT ["java","-jar","/am0-app.jar"]
