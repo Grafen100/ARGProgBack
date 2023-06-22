@@ -20,17 +20,17 @@ import com.portfolio.amo.Service.SPerson;
 
 
 @RestController
-@RequestMapping
+@RequestMapping ("/person")
 @CrossOrigin(origins = {"http://localhost:4200"})
 public class PersonController {
     @Autowired IPerson iPerson;
     
-    @GetMapping("person/list")
+    @GetMapping("/list")
     public List<Person> getPerson(){
         return iPerson.getPerson();
     }
     
-    @GetMapping("person/fetch/profile")
+    @GetMapping("/fetch/profile")
     public Person findPerson(){
         return iPerson.findPerson((int)1);
     }
