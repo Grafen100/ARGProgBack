@@ -11,7 +11,7 @@
 						
  
  # ENDPOINTS
- LINK DEL SERVIDOR EN VIVO: https://projectam0-app.web.app
+ LINK DEL SERVIDOR EN VIVO: https://projectam0.netlify.app
  
  ENTIDADES: Education, Experiences, Skill,Person, Project.
  
@@ -20,7 +20,7 @@
  #  *** OPEN ***
    
     LOGIN:
-    https://projectam0-app.web.app/login
+    https://projectam0.netlify.app/login
     
     { 
        "nombreUsuario": "admin",
@@ -44,21 +44,21 @@
    # METHOD GET 
      All
         
-         https://projectam0-app.web.app/educat/list
-         https://projectam0-app.web.app/expjob/list
-         https://projectam0-app.web.app/sh&ss/list
-         https://projectam0-app.web.app/proje/list
+         https://projectam0.netlify.app/educat/list
+         https://projectam0.netlify.app/expjob/list
+         https://projectam0.netlify.app/sh&ss/list
+         https://projectam0.netlify.app/proje/list
 
      One
          
-         https://projectam0-app.web.app/educat/detail/id
-         https://projectam0-app.web.app/expjob/detail/id
-         https://projectam0-app.web.app/sh&ss/detail/id
-         https://projectam0-app.web.app/proje/detail/id
+         https://projectam0.netlify.app/educat/detail/id
+         https://projectam0.netlify.app/expjob/detail/id
+         https://projectam0.netlify.app/sh&ss/detail/id
+         https://projectam0.netlify.app/proje/detail/id
          
    # METHOD POST
      
-         https://projectam0-app.web.app/person
+         https://projectam0.netlify.app/person
          
          {
            "nombre": "...",
@@ -69,7 +69,7 @@
          }
      
          
-        https://projectam0-app.web.app/educat
+        https://projectam0.netlify.app/educat
          
          {
           "nombreEduc": "...",
@@ -79,7 +79,7 @@
          }
          
          
-         https://projectam0-app.web.app/expjob
+         https://projectam0.netlify.app/expjob
          
          {
           "nombreExp": "...",
@@ -89,7 +89,7 @@
          }
          
          
-         https://projectam0-app.web.app/sh&ss
+         https://projectam0.netlify.app/sh&ss
          
         {
          "nombre": "...",
@@ -99,7 +99,7 @@
         }
          
          
-         https://projectam0-app.web.app/proje
+         https://projectam0.netlify.app/proje
          
          {
           "nombreProj": "...",
@@ -114,19 +114,19 @@
    # METHOD PUT 
      One
          
-         https://projectam0-app.web.app/editpers/id
-         https://projectam0-app.web.app/editeducat/id
-         https://projectam0-app.web.app/editexp/id
-         https://projectam0-app.web.app/sh&ss/update
-         https://projectam0-app.web.app/editproj/id
+         https://projectam0.netlify.app/editpers/id
+         https://projectam0.netlify.app/editeducat/id
+         https://projectam0.netlify.app/editexp/id
+         https://projectam0.netlify.app/sh&ss/update
+         https://projectam0.netlify.app/editproj/id
    
   # METHOD DELETE
      One
 
-	 https://projectam0-app.web.app/educat/delete/id
-         https://projectam0-app.web.app/expjob/delete/id
-         https://projectam0-app.web.app/sh&ss/delete/id
-         https://projectam0-app.web.app/proje/delete/id 
+	 https://projectam0.netlify.app/educat/delete/id
+         https://projectam0.netlify.app/expjob/delete/id
+         https://projectam0.netlify.app/sh&ss/delete/id
+         https://projectam0.netlify.app/proje/delete/id 
 
     
   PARA EJECUTAR LAS PETICIONES EL USUARIO DEBE ESTAR LOGUEADO, 

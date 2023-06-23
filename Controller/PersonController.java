@@ -21,7 +21,7 @@ import com.portfolio.amo.Service.SPerson;
 
 @RestController
 @RequestMapping ("/person")
-@CrossOrigin(origins = {"https://projectAm0.netlify.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://projectam0.netlify.app","http://localhost:4200"})
 public class PersonController {
     @Autowired IPerson iPerson;
     
