@@ -7,34 +7,31 @@ import javax.validation.constraints.NotBlank;
  * @author Grafen Whor
  */
 public class PersonDto {
-    
+
     @NotBlank
     private String nombre;
-     @NotBlank
+    @NotBlank
     private String apellido;
     @NotBlank
     private String descPers;
     @NotBlank
     private String imagen;
-     @NotBlank
+    @NotBlank
     private String telefono;
-    
-    //Constructors
 
+    // Constructors
     public PersonDto() {
     }
 
-    public PersonDto(String nombre, String apellido, String descPers, String imagen, 
-            String telefono) {
+    public PersonDto(String nombre, String apellido, String descPers, String imagen, String telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.descPers = descPers;
         this.imagen = imagen;
         this.telefono = telefono;
     }
-     
-     //Getters & Setters
 
+    //Getters & Setters
     public String getNombre() {
         return nombre;
     }
@@ -74,6 +71,5 @@ public class PersonDto {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    
-    
+
 }
