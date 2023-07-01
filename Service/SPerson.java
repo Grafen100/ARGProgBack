@@ -3,34 +3,43 @@ package com.portfolio.amo.Service;
 import com.portfolio.amo.Entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.List;
-import com.portfolio.amo.Interface.IPerson;
 import com.portfolio.amo.Repository.RPerson;
+import java.util.List;
+import java.util.Optional;
+import javax.transaction.Transactional;
 
 @Service
-public  class SPerson implements IPerson {
-    
-    @Autowired RPerson rPerson;
-    
-    @Override
-    public List<Person> getPerson() {
-        List<Person> person = rPerson.findAll();
-        return person;
-    }
+@Transactional
+public class SPerson {
 
-    @Override
-    public void savePerson(Person person) {
+    @Autowired
+    RPerson rPerson;
+
+    public List<Person> list(){
+        return rPerson.findAll();
+    }
+    
+    public Optional <Person> getOne(int id){
+        return rPerson.findById(id);
+    }
+    
+    public Optional <Person> getByNombre(String nombre){
+        return rPerson.findByNombre(nombre);
+    }
+    
+    public void save(Person person){
         rPerson.save(person);
     }
-
-    @Override
-    public void deletePerson(int id) {
+    
+    public void delete(int id){
         rPerson.deleteById(id);
     }
-
-    @Override
-    public Person findPerson(int id) {
-        Person person = rPerson.findById(id).orElse(null);
-        return person;
+    
+    public boolean existsById(int id){
+        return rPerson.existsById(id);
+    }
+    
+    public boolean existsByNombre(String nombre){
+        return rPerson.existsByNombre(nombre);
     }
 }
