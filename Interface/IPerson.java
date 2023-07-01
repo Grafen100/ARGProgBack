@@ -1,7 +1,6 @@
 package com.portfolio.amo.Interface;
 
 import com.portfolio.amo.Entity.Person;
-
 import java.util.List;
 
 public interface IPerson {
