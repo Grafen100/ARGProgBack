@@ -1,21 +1,15 @@
 package com.portfolio.amo.Controller;
 
 import com.portfolio.amo.Entity.Person;
-import com.portfolio.amo.Interface.IPerson;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.portfolio.amo.Service.SPerson;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 
 
@@ -23,18 +17,18 @@ import com.portfolio.amo.Service.SPerson;
 @RequestMapping ("/person")
 @CrossOrigin(origins = {"https://projectam0.netlify.app","http://localhost:4200"})
 public class PersonController {
-    
     @Autowired 
-    private IPerson iPerson;
+     SPerson sPerson;
     
     @GetMapping("/list")
-    public List<Person> getPerson(){
-        return iPerson.getPerson();
+    public ResponseEntity<List<Person>> list() {
+        List<Person> list = sPerson.list();
+        return new ResponseEntity(list, HttpStatus.OK);
     }
     
     @GetMapping("/fetch/profile")
     public Person findPerson(){
-        return iPerson.findPerson((int)1);
+        return sPerson.findPerson((int)1);
     }
     
    /* PARTE DEL CRUD QUE NO SE IMPLEMENTA EN LA APP. PORQUE CONSIDERA UNA SOLA PERSONA.
