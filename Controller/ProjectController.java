@@ -25,7 +25,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/proje")
-@CrossOrigin(origins = { "https://projectam0.netlify.app" ,"http://localhost:4200"})
+@CrossOrigin(origins = {"https://projectam0.netlify.app"})
+/*
+@CrossOrigin(origins = {"http://localhost:4200"})
+*/
 public class ProjectController {
 
      @Autowired

@@ -15,7 +15,10 @@ import org.springframework.http.ResponseEntity;
 
 @RestController
 @RequestMapping ("/person")
-@CrossOrigin(origins = {"https://projectam0.netlify.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://projectam0.netlify.app"})
+/*
+@CrossOrigin(origins = {"http://localhost:4200"})
+*/
 public class PersonController {
     @Autowired 
      SPerson sPerson;
