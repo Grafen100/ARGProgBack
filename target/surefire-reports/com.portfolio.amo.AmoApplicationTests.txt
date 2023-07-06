@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.portfolio.amo.AmoApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 32.244 s <<< FAILURE! - in com.portfolio.amo.AmoApplicationTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 30.825 s <<< FAILURE! - in com.portfolio.amo.AmoApplicationTests
 contextLoads  Time elapsed: 0.015 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.portfolio.amo.Security.MainSecurity$$EnhancerBySpringCGLIB$$3fe8a776@464d60fb, so it cannot be used on com.portfolio.amo.WebSecurityConfig$$EnhancerBySpringCGLIB$$e160d645@7bd7d71c too.
-Caused by: java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.portfolio.amo.Security.MainSecurity$$EnhancerBySpringCGLIB$$3fe8a776@464d60fb, so it cannot be used on com.portfolio.amo.WebSecurityConfig$$EnhancerBySpringCGLIB$$e160d645@7bd7d71c too.
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.portfolio.amo.Security.MainSecurity$$EnhancerBySpringCGLIB$$8eb2b532@3ef914f5, so it cannot be used on com.portfolio.amo.WebSecurityConfig$$EnhancerBySpringCGLIB$$302ae401@4ac0d49 too.
+Caused by: java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.portfolio.amo.Security.MainSecurity$$EnhancerBySpringCGLIB$$8eb2b532@3ef914f5, so it cannot be used on com.portfolio.amo.WebSecurityConfig$$EnhancerBySpringCGLIB$$302ae401@4ac0d49 too.
 

@@ -32,7 +32,6 @@ com\portfolio\amo\Controller\PersonController.class
 com\portfolio\amo\WebSecurityConfig.class
 com\portfolio\amo\Security\Jwt\JwtEntryPoint.class
 com\portfolio\amo\Service\SExperiences.class
-com\portfolio\amo\AmoApplication$1.class
 com\portfolio\amo\Entity\Skill.class
 com\portfolio\amo\Security\MainSecurity.class
 com\portfolio\amo\Repository\RProject.class
