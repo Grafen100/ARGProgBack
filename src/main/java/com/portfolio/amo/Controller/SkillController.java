@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/sh&ss")
-@CrossOrigin(origins = {"http://localhost:4200","https://projectam0-app.web.app"})
+@CrossOrigin(origins = {"http://localhost:4200","https://projectam0.netlify.app"})
 public class SkillController {
 
     @Autowired
